@@ -1,0 +1,118 @@
+.service-title{
+  font-family: 'Playfair Display',serif;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary-color); }
+
+.service-card{
+    row-gap: 30px;
+    padding-top: 0px !important;
+}
+.service-head{
+    margin:40px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-card > .col h2{
+    color: aliceblue !important;
+}
+.overlay-cover{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: black;
+}
+#custom-cards  p {
+    text-align: justify;
+}
+.overlay-text{
+    position: relative;
+    z-index: 10;
+}
+
+.energy-logo{
+    margin-top: 10px;
+}
+
+/* @font-face {
+    font-family: "engraversBT";
+    src: url("/assets/fonts/EngraversGothic\ BT\ Regular.ttf") format(truetype);
+}
+
+.energy{
+    font-family: "engraversBT","serif";
+} */
+
+.service-title{
+    margin-right: auto;
+}
+.abouthead{
+    align-items: end;
+}
+.gallery{
+    text-align: center;
+    margin: 30px 0px;
+    font-weight: bolder;
+}
+.digitalhead{
+    justify-content: space-between;
+    align-items: end;
+}
+.emoji-hand{
+    font-size: xx-large;
+}
+.getspares-link{
+    display: flex;
+    flex-direction: column;
+}
+.getspares-btn{
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: blue;
+    border: 0px;
+    margin-top: 30px;
+}
+.getspares-btn a{
+    color: azure;
+}
+/* Fade-in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 2.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-section{
+    position: relative;
+}
+
+.service-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.1;
+    background-size: cover;
+}
+.agrotech-bg{
+    background-image: url("/assets/images/agrotech.jpg") ;
+}
+.energy-bg{
+    background-image: url("/assets/images/energy-bg.jpg") ;
+}
+.digi-markt-bg{
+    background-image: url("/assets/images/getspares-bg.jpg") ;
+}
