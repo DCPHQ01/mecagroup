@@ -9622,7 +9622,7 @@ input,
 select,
 label,
 li, span {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   outline: none;
   font-family: 'Poppins', sans-serif; }
 
@@ -10248,7 +10248,7 @@ nav ul li a:hover {
   background-position: center 90% }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/blue\ engine.jpg) no-repeat center;
+  background: url(../images/spark\ plugs.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
@@ -10656,7 +10656,8 @@ nav ul li a:hover {
   opacity: 0;
   top: 0;
   left: 0;
-  -webkit-appearance: none; }
+  /* -webkit-appearance: none;  */
+}
 
 .w3l-faq-block .w3l-faq ul li input[type=checkbox]:checked ~ p {
   margin-top: 0;
@@ -11015,7 +11016,7 @@ h2.resp-accordion:first-child {
   font-size: 20px;
   line-height: 25px;
   color: var(--heading-color);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-weight: 700; }
 
 .w3l-footer .w3l-footer-16-main h4 {
@@ -11964,7 +11965,7 @@ h2.title {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center 100%;
   background-attachment: fixed; }
-.breadcrumb-bg-gallery {
+.breadcrumb-bg-getspares {
   background-size: cover;
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 0, 0.7)), url(../images/getspares.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -11997,6 +11998,13 @@ h2.title {
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 0, 0.7)), url(../images/grow\ with\ us.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
+  background-attachment: fixed; }
+
+.breadcrumb-bg-gallery {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 0, 0.7)), url(../images/gallery.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center 90%;
   background-attachment: fixed; }
 
 @media screen and (max-width: 991px) {
@@ -12649,8 +12657,8 @@ h2.title {
   }
   
   .circle {
-    width: 250px; /* Increased circle size */
-    height: 250px;
+    width: 350px; /* Increased circle size */
+    height: 350px;
     border-width: 4px !important;
     border-color: rgb(0, 0, 255) !important;
     border-style: solid; /* Required */
@@ -12740,9 +12748,18 @@ h2.title {
   /* Mobile Overrides (max-width: 767px) */
 @media (max-width: 767px) {
   .team-container {
-    height: 60vh; /* Increased container height */
+    height: 100%; /* Increased container height */
     padding: 2rem 0;
     flex-direction: column !important;
+  }
+  .gp-flex{
+    justify-content: center !important;
+  }
+  .gp-flex h1{
+    text-align: center !important;
+  }
+  .gp-flex h3{
+    justify-self: center !important;
   }
   .farm-vid{
     flex-direction: column !important;
@@ -12754,7 +12771,9 @@ h2.title {
     margin-top: 100px !important;
   }
 
-    .circle {
+  .circle {
+    width: 200px;
+    height: 200px;
     border-width: 4px !important;
     border-color: rgb(0, 0, 255) !important;
     border-style: solid; /* Required */
@@ -12762,6 +12781,9 @@ h2.title {
   .logos-wrapper {
     width: 100% !important;
     padding: 10px 20px;
+  }
+  .logos-wrapper card {
+    margin-bottom: 2rem !important;
   }
   .logos-wrapper .text-content {
     width: 100% !important;
@@ -12951,6 +12973,13 @@ h2.title {
         
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+          .box-child {
+            padding: 70px 0px;
+        }
+        .midd-w3{
+          padding-top: 0px !important;
+        }
+          
             .hero-title {
                 font-size: 2.5rem;
             }
@@ -12988,7 +13017,7 @@ h2.title {
   align-items: center;
 }
 .logos-wrapper{
-  width: 60%;
+  width: 70%;
 }
 
 .stats-con{
@@ -13086,4 +13115,182 @@ h2.title {
 
 .signin-form textarea {
   resize: none;
+}
+
+/* Reset and Base Styles getspares */
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    /* text-align: center; */
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+fieldset textarea{
+  resize: none;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+    
+    fieldset {
+        padding: 15px;
+    }
+}
+.getspares-main{
+  padding: 20px;
+}
+.service-section h1{
+  margin-bottom: 0;
+}
+
+.gp-summary{
+  text-align: start !important;
+}
+.agrotech-img{
+  background-image: url("/assets/images/agriculutre.jpg");
+  background-size: cover;
+}
+.energy-img{
+  background-image: url("/assets/images/energy\ tower.jpg");
+  background-size: cover;
+}
+.getspares-img{
+  background-image: url("/assets/images/clean\ gears.png");
+  background-size: cover;
+}
+.footer-gd-16{
+  display: flex;
+  gap:20px;
+}
+.w3l-footer-16 h3{
+  margin-bottom: 10px !important;
+}
+.w3l-footer-16-main{
+  background-color: #357ab8 !important;
+  color: white !important;
+}
+.w3l-footer-16-main li a{
+  color: white !important;
+}
+.copywrigth{
+  color: white !important;
+}
+.footer-rights{
+  justify-self: center !important;
+}
+.meca-model{
+  font-weight: 900;
+}
+.footer-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap:20px;
+}
+.footer-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+/* .address-info{
+  align-self: flex-end;
+} */
+#address-info .contact-info{
+  color: white !important;
+  padding: 0px 15px;
+}
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .gp-flex h1 {
+    text-align: left !important; /* Explicitly set left alignment for larger screens */
+  }
 }

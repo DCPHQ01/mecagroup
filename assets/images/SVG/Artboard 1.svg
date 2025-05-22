@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424.05 130.24">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        fill: #fefefe;
+        font-family: Impact, Impact;
+        font-size: 93.91px;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: NirmalaUI-Bold, 'Nirmala UI';
+        font-size: 16.92px;
+        font-weight: 700;
+      }
+
+      .cls-3, .cls-10 {
+        fill: #3e4095;
+      }
+    </style>
+  </defs>
+  <rect class="cls-10" x="31.41" width="106.29" height="102.89"/>
+  <rect class="cls-10" x="141.75" width="81.52" height="102.89"/>
+  <rect class="cls-10" x="226.2" width="81.52" height="102.89"/>
+  <rect class="cls-10" x="310.64" width="81.52" height="102.89"/>
+  <text class="cls-2" transform="translate(47.22 88.59) scale(1.11 1)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-2" transform="translate(159.63 88.59) scale(1.11 1)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-2" transform="translate(237.97 88.54) scale(1.11 1)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-2" transform="translate(324.94 88.59) scale(1.11 1)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(0 124.1)"><tspan class="cls-8" x="0" y="0">A</tspan><tspan class="cls-5" x="11.68" y="0">G</tspan><tspan class="cls-9" x="23.71" y="0">R</tspan><tspan class="cls-4" x="34.59" y="0">O</tspan><tspan x="46.66" y="0">TECH | ENE</tspan><tspan class="cls-1" x="135.35" y="0">R</tspan><tspan x="146.16" y="0">GY | ENGINEERING | e-</tspan><tspan class="cls-7" x="327.14" y="0">C</tspan><tspan x="337.48" y="0">OMME</tspan><tspan class="cls-6" x="391.71" y="0">R</tspan><tspan x="402.51" y="0">CE</tspan></text>
+</svg>
