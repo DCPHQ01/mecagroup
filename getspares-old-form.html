@@ -1,0 +1,623 @@
+<!--
+Author: 
+Author URL: 
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta property="og:title" content="MECA" />
+    <meta property="og:description" content="THE MECA GROUP stands as a dynamic conglomerate, seamlessly integrated into the sectors – AGROTECH, ENERGY and E-COMMERCE – to drive innovation, ecological stewardship, and technological advancement. Grounded in an unwavering dedication to sustainable and economic development, the MECA GROUP envisions a future wherein the integration of cutting-edge engineering, clean energy solutions, and digital commerce harmoniously converge to mold a flourishing and environmentally conscious society." />
+    <!-- <meta property="og:image" content="https://yourdomain.com/new-logo.png" /> -->
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://yourdomain.com" /> -->
+    <meta name="description" content="THE MECA GROUP stands as a dynamic conglomerate, seamlessly integrated into the sectors – AGROTECH, ENERGY and E-COMMERCE – to drive innovation, ecological stewardship, and technological advancement. Grounded in an unwavering dedication to sustainable and economic development, the MECA GROUP envisions a future wherein the integration of cutting-edge engineering, clean energy solutions, and digital commerce harmoniously converge to mold a flourishing and environmentally conscious society.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <title>MECA | Home</title>
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body>
+<!--header-->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark stroke">
+      <h1>
+        <a class="navbar-brand" href="index.html">
+        <img src="/assets/images/MECA LOGO 2.svg" alt="logo" title="logo" ></a>
+      </h1>
+
+      <!-- if logo is image enable this   
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+      <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mx-lg-auto">
+          <li class="nav-item @@home_active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item @@about__active">
+              <a class="nav-link" href="division.html">Division</a>
+            </li>
+            <li class="nav-item @@projects__active">
+                <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item @@gallery__active">
+              <a class="nav-link" href="gallery.html">gallery</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="getspares.html">getspares</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--/header-->
+
+<!-- services breadcrumb -->
+<section class="w3l-about-breadcrumb">
+    <div class="breadcrumb-bg breadcrumb-bg-getspares py-5">
+        <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3">
+            <h2 class="title">Getspares</h2>
+            <ul class="breadcrumbs-custom-path mt-2 text-center">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Getspares </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<main class="getspares-main">
+    <div class="form-container">
+           <h1>Spare Parts Request</h1>
+           <form id="partsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+               <!-- Customer Information -->
+               <fieldset>
+                   <legend>Your Information</legend>
+                   <div class="form-group">
+                       <label for="fullName">Full Name*</label>
+                       <input type="text" id="fullName" name="fullName" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="email">Email*</label>
+                       <input type="email" id="email" name="email" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="phone">Phone Number*</label>
+                       <input type="tel" id="phone" name="phone" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="address">Shipping Address*</label>
+                       <textarea id="address" name="address" rows="3" required></textarea>
+                   </div>
+               </fieldset>
+   
+               <!-- Vehicle Information -->
+               <fieldset>
+                   <legend>Vehicle Details</legend>
+                   <div class="form-group">
+                       <label for="make">Make (Brand)*</label>
+                       <input type="text" id="make" name="make" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="model">Model*</label>
+                       <input type="text" id="model" name="model" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="year">Year*</label>
+                       <input type="number" id="year" name="year" min="1900" max="2025" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="vin">VIN (Vehicle Identification Number)</label>
+                       <input type="text" id="vin" name="vin">
+                   </div>
+                   <div class="form-group">
+                       <label for="engine">Engine Code/Type</label>
+                       <input type="text" id="engine" name="engine">
+                   </div>
+                   <div class="form-group">
+                       <label for="licensePlate">License Plate Number</label>
+                       <input type="text" id="licensePlate" name="licensePlate">
+                   </div>
+               </fieldset>
+   
+               <!-- Part Information -->
+               <fieldset>
+                   <legend>Part Details</legend>
+                   <div class="form-group">
+                       <label for="partName">Part Name/Description*</label>
+                       <input type="text" id="partName" name="partName" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="partNumber">OEM Part Number (if known)</label>
+                       <input type="text" id="partNumber" name="partNumber">
+                   </div>
+                   <div class="form-group">
+                       <label for="quantity">Quantity*</label>
+                       <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="urgency">Urgency</label>
+                       <select id="urgency" name="urgency">
+                           <option value="standard">Standard (1-2 weeks)</option>
+                           <option value="urgent">Urgent (3-5 business days)</option>
+                           <option value="express">Express (1-2 business days)</option>
+                       </select>
+                   </div>
+                   <div class="form-group">
+                       <label for="additionalInfo">Additional Information</label>
+                       <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+                   </div>
+               </fieldset>
+   
+               <!-- Terms and Submission -->
+               <div class="form-group checkbox-group">
+                   <input type="checkbox" id="terms" name="terms" required>
+                   <label for="terms">I understand that this is a request and final price/availability will be confirmed*</label>
+               </div>
+               <div class="form-group">
+                   <button type="submit" class="submit-btn">Submit Request</button>
+               </div>
+               <!-- <input type="hidden" name="_template" value="table"> -->
+               <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+               <input type="hidden" name="_captcha" value="false">
+               <!-- <input type="hidden" name="_autoresponse" value="Thank you for Subscribing...You will be notified on update"> -->
+           </form>
+           <div id="confirmation" class="hidden">
+               <h2>Thank you for your request!</h2>
+               <p>We've received your spare parts request and will contact you shortly with availability and pricing information.</p>
+           </div>
+       </div>
+</main>
+
+<!-- footer -->
+<section class="w3l-footer">
+    <div class="w3l-footer-16-main py-5">
+        <div class="container pt-lg-4">
+            <div class="footer-wrap">
+                <div class="footer-flex">
+                    <div class="">
+                        <div class="col-sm-4 col-lg-12 column">
+                            <h3>Site Map</h3>
+                            <ul class="footer-gd-16 d-flex">
+                                <div class="footer-gd-1">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="about.html">Division</a></li>
+                                </div>
+                                <div class="footer-gd-2">
+                                    <li><a href="projects.html">Our Projects</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="careers.html">Join Us</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="address-info" class="address-info">
+                    <p class="d-flex align-items-center gap-2 contact-info">
+                      <span class="fa fa-map-marker" aria-hidden="true"></span>
+                      <span class="contact-info">
+                      Plot 2542, Hassan Usman Katsina Street, Asokoro, FCT-Abuja, Nigeria.
+                      </span>
+                    </p>
+                    <p class="d-flex align-items-center gap-2 contact-info">
+                      <span class="fa fa-phone" aria-hidden="true"></span>
+                      <a href="tel:+2349082222333" class="contact-info">+234 (0) 908 222 2333</a>
+                    </p>
+                    <p class="d-flex align-items-center gap-2 contact-info">
+                      <span class="fa fa-envelope" aria-hidden="true"></span>
+                      <a href="mailto:info@mecagroup.com.ng" class="contact-info">info@mecagroup.com.ng</a>
+                    </p>
+                  </div>
+                  
+                
+      </div>
+      <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+          <div class="columns footer-rights text-center">
+              <p class="copywrigth">&copy; <span class="year"></span> MECA. All rights reserved. Design by TID.
+                </p>
+            </div>
+            <div class="columns-2 mt-lg-0 mt-3">
+                <ul class="social">
+                    <li><a href="https://web.facebook.com/meca.coop.9" target="_blank"><span class="fa fa-facebook" target="_blank" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/company/mecaafrica" target="_blank"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="https://x.com/meca_africa" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                        <li><a href="https://www.instagram.com/mecaafrica/" target="_blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                        </li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+</button>
+
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+
+<script>
+    const year = new Date().getFullYear();
+    document.querySelector('.year').innerHTML = year;
+</script>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("movetop").style.display = "block";
+        } else {
+            document.getElementById("movetop").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- //move top -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+</section>
+<!-- //footer -->
+<!-- Template JavaScript -->
+<!-- <script src="assets/js/jquery-3.3.1.min.js"></script> -->
+
+<script src="assets/js/theme-change.js"></script>
+<!-- responsive tabs -->
+<script src="assets/js/easyResponsiveTabs.js"></script>
+
+<!--Plug-in Initialisation-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Horizontal Tab
+        $('#parentHorizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+    });
+</script>
+
+<script src="assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+    $(document).ready(function () {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
+                }
+            }
+        })
+    })
+</script>
+<!-- //script -->
+<script>
+    $(document).ready(function () {
+        $('.owl-three').owlCarousel({
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                480: {
+                    items: 2
+                },
+                767: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1280: {
+                    items: 5
+                }
+            }
+        })
+    })
+</script>
+
+<!-- script for testimonials -->
+<script>
+    $(document).ready(function () {
+        $('.owl-testimonial').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+         nav: false
+        },
+        480: {
+            items: 1,
+            nav: false
+        },
+        667: {
+            items: 1,
+            nav: true
+        },
+        1000: {
+            items: 1,
+            nav: true
+        }
+    }
+})
+})
+</script>
+<!-- //script for testimonials -->
+
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            
+            fixedContentPos: false,
+            fixedBgPos: true,
+            
+            overflowY: 'auto',
+            
+            closeBtnInside: true,
+            preloader: false,
+            
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+        
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+            
+            fixedContentPos: false,
+            fixedBgPos: true,
+            
+            overflowY: 'auto',
+            
+            closeBtnInside: true,
+            preloader: false,
+            
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+        
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+    
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!--//MENU-JS-->
+
+<!-- video script -->
+<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const video = document.querySelector('video');
+                
+                // Ensure looping works everywhere
+                video.addEventListener('ended', function() {
+                    this.currentTime = 0;
+                    this.play();
+                });
+                
+                // iOS hack for autoplay
+                video.play().catch(e => {
+                    video.muted = true;
+                    video.play();
+                });
+            });
+</script>
+
+<!-- marquee script  -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.getElementById('marquee-track');
+        const logos = track.innerHTML;
+        
+        // Duplicate the logos to create seamless loop
+        track.innerHTML = logos + logos + logos; // Triple for safety
+        
+        // Calculate proper animation duration based on content width
+        const firstLogo = track.querySelector('.marquee-item');
+        const logoWidth = firstLogo.offsetWidth + 80; // width + margin
+        const logoCount = track.querySelectorAll('.marquee-item').length / 3; // original count
+        const contentWidth = logoWidth * logoCount;
+        
+        // 100px per second speed seems pleasant
+        const duration = contentWidth / 100;
+        
+        track.style.animationDuration = `${duration}s`;
+        track.style.transform = 'translateX(0)';
+        
+        // Reset animation periodically to avoid drift
+        setInterval(() => {
+            track.style.animation = 'none';
+            void track.offsetWidth; // trigger reflow
+            track.style.animation = `scroll ${duration}s linear infinite`;
+        }, duration * 1000);
+    });
+</script>
+
+<!-- script of spinning logo -->
+<script>
+    const button = document.querySelector('.btn');
+    const link = document.querySelector('.link');
+
+    button.addEventListener('mouseenter', () => {
+        link.classList.add('active');
+    });
+
+    button.addEventListener('mouseleave', () => {
+        link.classList.remove('active');
+});
+</script>
+
+<!-- form submit handler that hijacked the form -->
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('partsForm');
+    const confirmation = document.getElementById('confirmation');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // In a real application, you would send the form data to your server here
+        // For demonstration, we'll just show the confirmation message
+        form.classList.add('hidden');
+        confirmation.classList.remove('hidden');
+        
+        // Scroll to the confirmation message
+        confirmation.scrollIntoView({ behavior: 'smooth' });
+        
+        // Collect form data (for demonstration, logging to console)
+        const formData = new FormData(form);
+        const formValues = Object.fromEntries(formData.entries());
+        console.log('Form submitted with data:', formValues);
+        
+        // In a real application, you would send this data to your server:
+        // fetch('/submit-request', {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        // .then(response => response.json())
+        // .then(data => console.log('Success:', data))
+        // .catch(error => console.error('Error:', error));
+    });
+
+    // Add some basic validation for the year field
+    const yearInput = document.getElementById('year');
+    yearInput.addEventListener('input', function() {
+        const currentYear = new Date().getFullYear();
+        if (this.value > currentYear) {
+            this.setCustomValidity(`Year must be ${currentYear} or earlier`);
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+});
+</script> -->
+
+<!-- stats number counter-->
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+</script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
