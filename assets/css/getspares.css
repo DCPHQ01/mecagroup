@@ -532,3 +532,9 @@ input[type="file"] {
                 text-align: center;
             }
         }
+
+
+/*recent changes */
+.nav-links .active {
+    color: red;
+} 

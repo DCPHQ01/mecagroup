@@ -203,7 +203,24 @@
         const year = new Date().getFullYear()
         document.querySelector(".year").innerHTML = year
 
-        
+         // Set active nav item based on current page
+        function setActiveNavItem() {
+            const currentPath = window.location.pathname;
+            const navItems = document.querySelectorAll('.nav-links li');
+            
+            navItems.forEach(item => {
+                const link = item.querySelector('a');
+                if (link) {
+                    const href = link.getAttribute('href');
+                    link.classList.toggle('active', currentPath.includes(href));
+                }
+            });
+        }
+
+        // Call the function when page loads
+        document.addEventListener('DOMContentLoaded', setActiveNavItem);
+
+
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
