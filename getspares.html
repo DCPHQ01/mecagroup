@@ -17,7 +17,7 @@ Author URL:
 
     <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
 
-    <title>MECA | Home</title>
+    <title>MECA | Getspares</title>
 
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -88,105 +88,455 @@ Author URL:
 
 <main class="getspares-main">
     <div class="form-container">
-           <h1>Spare Parts Request</h1>
-           <form id="partsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
-               <!-- Customer Information -->
-               <fieldset>
-                   <legend>Your Information</legend>
-                   <div class="form-group">
-                       <label for="fullName">Full Name*</label>
-                       <input type="text" id="fullName" name="fullName" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="email">Email*</label>
-                       <input type="email" id="email" name="email" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="phone">Phone Number*</label>
-                       <input type="tel" id="phone" name="phone" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="address">Shipping Address*</label>
-                       <textarea id="address" name="address" rows="3" required></textarea>
-                   </div>
-               </fieldset>
-   
-               <!-- Vehicle Information -->
-               <fieldset>
-                   <legend>Vehicle Details</legend>
-                   <div class="form-group">
-                       <label for="make">Make (Brand)*</label>
-                       <input type="text" id="make" name="make" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="model">Model*</label>
-                       <input type="text" id="model" name="model" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="year">Year*</label>
-                       <input type="number" id="year" name="year" min="1900" max="2025" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="vin">VIN (Vehicle Identification Number)</label>
-                       <input type="text" id="vin" name="vin">
-                   </div>
-                   <div class="form-group">
-                       <label for="engine">Engine Code/Type</label>
-                       <input type="text" id="engine" name="engine">
-                   </div>
-                   <div class="form-group">
-                       <label for="licensePlate">License Plate Number</label>
-                       <input type="text" id="licensePlate" name="licensePlate">
-                   </div>
-               </fieldset>
-   
-               <!-- Part Information -->
-               <fieldset>
-                   <legend>Part Details</legend>
-                   <div class="form-group">
-                       <label for="partName">Part Name/Description*</label>
-                       <input type="text" id="partName" name="partName" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="partNumber">OEM Part Number (if known)</label>
-                       <input type="text" id="partNumber" name="partNumber">
-                   </div>
-                   <div class="form-group">
-                       <label for="quantity">Quantity*</label>
-                       <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-                   </div>
-                   <div class="form-group">
-                       <label for="urgency">Urgency</label>
-                       <select id="urgency" name="urgency">
-                           <option value="standard">Standard (1-2 weeks)</option>
-                           <option value="urgent">Urgent (3-5 business days)</option>
-                           <option value="express">Express (1-2 business days)</option>
-                       </select>
-                   </div>
-                   <div class="form-group">
-                       <label for="additionalInfo">Additional Information</label>
-                       <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
-                   </div>
-               </fieldset>
-   
-               <!-- Terms and Submission -->
-               <div class="form-group checkbox-group">
-                   <input type="checkbox" id="terms" name="terms" required>
-                   <label for="terms">I understand that this is a request and final price/availability will be confirmed*</label>
-               </div>
-               <div class="form-group">
-                   <button type="submit" class="submit-btn">Submit Request</button>
-               </div>
-               <!-- <input type="hidden" name="_template" value="table"> -->
-               <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
-               <input type="hidden" name="_captcha" value="false">
-               <!-- <input type="hidden" name="_autoresponse" value="Thank you for Subscribing...You will be notified on update"> -->
-           </form>
-           <div id="confirmation" class="hidden">
-               <h2>Thank you for your request!</h2>
-               <p>We've received your spare parts request and will contact you shortly with availability and pricing information.</p>
-           </div>
-       </div>
+    <h1>EV Spare Parts Request</h1>
+    <form id="evPartsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+        <!-- Customer Information -->
+        <fieldset>
+            <legend>Your Information</legend>
+            <div class="form-group">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address*</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+        <!-- EV Vehicle Information -->
+        <fieldset>
+            <legend>EV Vehicle Details</legend>
+            <div class="form-group">
+                <label for="make">Make (Brand)*</label>
+                <input type="text" id="make" name="make" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model*</label>
+                <input type="text" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year*</label>
+                <input type="number" id="year" name="year" min="2000" max="2025" required>
+            </div>
+            <div class="form-group">
+                <label for="vin">VIN (Vehicle Identification Number)</label>
+                <input type="text" id="vin" name="vin">
+            </div>
+            <div class="form-group">
+                <label for="battery">Battery Type / Capacity (e.g., 60kWh, Lithium-ion)</label>
+                <input type="text" id="battery" name="battery">
+            </div>
+            <div class="form-group">
+                <label for="charging">Charging System (e.g., CCS, CHAdeMO, Tesla)</label>
+                <input type="text" id="charging" name="charging">
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate Number</label>
+                <input type="text" id="licensePlate" name="licensePlate">
+            </div>
+        </fieldset>
+
+        <!-- EV Part Information -->
+        <fieldset>
+            <legend>Part Details</legend>
+            <div class="form-group">
+                <label for="partName">Part Name/Description*</label>
+                <input type="text" id="partName" name="partName" required>
+            </div>
+            <div class="form-group">
+                <label for="partNumber">OEM Part Number (if known)</label>
+                <input type="text" id="partNumber" name="partNumber">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity*</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="urgency">Urgency</label>
+                <select id="urgency" name="urgency">
+                    <option value="standard">Standard (1-2 weeks)</option>
+                    <option value="urgent">Urgent (3-5 business days)</option>
+                    <option value="express">Express (1-2 business days)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information (e.g., part location, symptoms, etc.)</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Terms and Submission -->
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I understand this is a request and final price/availability will be confirmed*</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </div>
+
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <div id="confirmation" class="hidden">
+        <h2>Thank you for your request!</h2>
+        <p>We've received your EV spare parts request and will contact you shortly with availability and pricing information.</p>
+    </div>
+    </div>
+
+    <div class="form-container">
+    <h1>Hybrid Vehicle Spare Parts Request</h1>
+    <form id="hybridPartsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+        <!-- Customer Information -->
+        <fieldset>
+            <legend>Your Information</legend>
+            <div class="form-group">
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address*</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Hybrid Vehicle Information -->
+        <fieldset>
+            <legend>Hybrid Vehicle Details</legend>
+            <div class="form-group">
+                <label for="make">Make (Brand)*</label>
+                <input type="text" id="make" name="make" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model*</label>
+                <input type="text" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year*</label>
+                <input type="number" id="year" name="year" min="2000" max="2025" required>
+            </div>
+            <div class="form-group">
+                <label for="vin">VIN (Vehicle Identification Number)</label>
+                <input type="text" id="vin" name="vin">
+            </div>
+            <div class="form-group">
+                <label for="engine">Engine Type (e.g., 1.8L Petrol)</label>
+                <input type="text" id="engine" name="engine">
+            </div>
+            <div class="form-group">
+                <label for="motor">Electric Motor Type (e.g., AC Synchronous)</label>
+                <input type="text" id="motor" name="motor">
+            </div>
+            <div class="form-group">
+                <label for="battery">Hybrid Battery Type/Voltage (e.g., NiMH, 300V)</label>
+                <input type="text" id="battery" name="battery">
+            </div>
+            <div class="form-group">
+                <label for="transmission">Transmission Type (e.g., e-CVT)</label>
+                <input type="text" id="transmission" name="transmission">
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate Number</label>
+                <input type="text" id="licensePlate" name="licensePlate">
+            </div>
+        </fieldset>
+
+        <!-- Part Information -->
+        <fieldset>
+            <legend>Part Details</legend>
+            <div class="form-group">
+                <label for="partName">Part Name/Description*</label>
+                <input type="text" id="partName" name="partName" required>
+            </div>
+            <div class="form-group">
+                <label for="partNumber">OEM Part Number (if known)</label>
+                <input type="text" id="partNumber" name="partNumber">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity*</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="urgency">Urgency</label>
+                <select id="urgency" name="urgency">
+                    <option value="standard">Standard (1–2 weeks)</option>
+                    <option value="urgent">Urgent (3–5 business days)</option>
+                    <option value="express">Express (1–2 business days)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Terms and Submission -->
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I understand this is a request and final price/availability will be confirmed*</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </div>
+
+        <!-- Hidden Inputs -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <div id="confirmation" class="hidden">
+        <h2>Thank you for your request!</h2>
+        <p>We've received your hybrid vehicle parts request and will contact you shortly with availability and pricing information.</p>
+    </div>
+</div>
+
+<div class="form-container">
+  <h1>Petrol Car Spare Parts Request</h1>
+  <form id="petrolPartsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+    
+    <!-- Customer Information -->
+    <fieldset>
+      <legend>Your Information</legend>
+      <div class="form-group">
+        <label for="fullName">Full Name*</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address*</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+    </fieldset>
+
+    <!-- Petrol Vehicle Information -->
+    <fieldset>
+      <legend>Petrol Vehicle Details</legend>
+      <div class="form-group">
+        <label for="make">Make (Brand)*</label>
+        <input type="text" id="make" name="make" required>
+      </div>
+      <div class="form-group">
+        <label for="model">Model*</label>
+        <input type="text" id="model" name="model" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year*</label>
+        <input type="number" id="year" name="year" min="1900" max="2025" required>
+      </div>
+      <div class="form-group">
+        <label for="vin">VIN (Vehicle Identification Number)</label>
+        <input type="text" id="vin" name="vin">
+      </div>
+      <div class="form-group">
+        <label for="engine">Engine Type / Size (e.g., 2.0L I4 Petrol)*</label>
+        <input type="text" id="engine" name="engine" required>
+      </div>
+      <div class="form-group">
+        <label for="fuelSystem">Fuel System (e.g., EFI, Carburetor)</label>
+        <input type="text" id="fuelSystem" name="fuelSystem">
+      </div>
+      <div class="form-group">
+        <label for="transmission">Transmission Type (e.g., Manual, Automatic)</label>
+        <input type="text" id="transmission" name="transmission">
+      </div>
+      <div class="form-group">
+        <label for="licensePlate">License Plate Number</label>
+        <input type="text" id="licensePlate" name="licensePlate">
+      </div>
+    </fieldset>
+
+    <!-- Part Information -->
+    <fieldset>
+      <legend>Part Details</legend>
+      <div class="form-group">
+        <label for="partName">Part Name/Description*</label>
+        <input type="text" id="partName" name="partName" required>
+      </div>
+      <div class="form-group">
+        <label for="partNumber">OEM Part Number (if known)</label>
+        <input type="text" id="partNumber" name="partNumber">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity*</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+      </div>
+      <div class="form-group">
+        <label for="urgency">Urgency</label>
+        <select id="urgency" name="urgency">
+          <option value="standard">Standard (1–2 weeks)</option>
+          <option value="urgent">Urgent (3–5 business days)</option>
+          <option value="express">Express (1–2 business days)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additionalInfo">Additional Information (e.g., spark plug size, cylinder count)</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+      </div>
+    </fieldset>
+
+    <!-- Terms and Submission -->
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I understand this is a request and final price/availability will be confirmed*</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit Request</button>
+    </div>
+
+    <!-- Hidden Inputs -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+
+  <div id="confirmation" class="hidden">
+    <h2>Thank you for your request!</h2>
+    <p>We've received your petrol car parts request and will contact you shortly with availability and pricing information.</p>
+  </div>
+</div>
+
+<div class="form-container">
+  <h1>Diesel Car Spare Parts Request</h1>
+  <form id="dieselPartsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+    
+    <!-- Customer Information -->
+    <fieldset>
+      <legend>Your Information</legend>
+      <div class="form-group">
+        <label for="fullName">Full Name*</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address*</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+    </fieldset>
+
+    <!-- Diesel Vehicle Information -->
+    <fieldset>
+      <legend>Diesel Vehicle Details</legend>
+      <div class="form-group">
+        <label for="make">Make (Brand)*</label>
+        <input type="text" id="make" name="make" required>
+      </div>
+      <div class="form-group">
+        <label for="model">Model*</label>
+        <input type="text" id="model" name="model" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year*</label>
+        <input type="number" id="year" name="year" min="1900" max="2025" required>
+      </div>
+      <div class="form-group">
+        <label for="vin">VIN (Vehicle Identification Number)</label>
+        <input type="text" id="vin" name="vin">
+      </div>
+      <div class="form-group">
+        <label for="engine">Engine Type / Size (e.g., 2.5L I4 Diesel)*</label>
+        <input type="text" id="engine" name="engine" required>
+      </div>
+      <div class="form-group">
+        <label for="injectionSystem">Fuel Injection System (e.g., Common Rail, Direct Injection)</label>
+        <input type="text" id="injectionSystem" name="injectionSystem">
+      </div>
+      <div class="form-group">
+        <label for="turbo">Turbocharged?</label>
+        <select id="turbo" name="turbo">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="unknown">Not Sure</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="emissionSystem">Emission Control System (e.g., DPF, EGR)</label>
+        <input type="text" id="emissionSystem" name="emissionSystem">
+      </div>
+      <div class="form-group">
+        <label for="licensePlate">License Plate Number</label>
+        <input type="text" id="licensePlate" name="licensePlate">
+      </div>
+    </fieldset>
+
+    <!-- Part Information -->
+    <fieldset>
+      <legend>Part Details</legend>
+      <div class="form-group">
+        <label for="partName">Part Name/Description*</label>
+        <input type="text" id="partName" name="partName" required>
+      </div>
+      <div class="form-group">
+        <label for="partNumber">OEM Part Number (if known)</label>
+        <input type="text" id="partNumber" name="partNumber">
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity*</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+      </div>
+      <div class="form-group">
+        <label for="urgency">Urgency</label>
+        <select id="urgency" name="urgency">
+          <option value="standard">Standard (1–2 weeks)</option>
+          <option value="urgent">Urgent (3–5 business days)</option>
+          <option value="express">Express (1–2 business days)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="additionalInfo">Additional Information (e.g., DPF sensor, glow plugs, injector details)</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+      </div>
+    </fieldset>
+
+    <!-- Terms and Submission -->
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I understand this is a request and final price/availability will be confirmed*</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit Request</button>
+    </div>
+
+    <!-- Hidden Inputs -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+
+  <div id="confirmation" class="hidden">
+    <h2>Thank you for your request!</h2>
+    <p>We've received your diesel vehicle parts request and will contact you shortly with availability and pricing information.</p>
+  </div>
+</div>
+ 
 </main>
 
 <!-- footer -->
