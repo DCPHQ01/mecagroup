@@ -13140,6 +13140,7 @@ fieldset {
     padding: 20px;
     margin-bottom: 20px;
 }
+
 fieldset textarea{
   resize: none;
 }
@@ -13217,9 +13218,11 @@ input[type="file"] {
         padding: 15px;
     }
 }
+
 .getspares-main{
   padding: 20px;
 }
+
 .service-section h1{
   margin-bottom: 0;
 }
@@ -13227,6 +13230,7 @@ input[type="file"] {
 .gp-summary{
   text-align: start !important;
 }
+
 .agrotech-img{
   background-image: url("/assets/images/agriculutre.jpg");
   background-size: cover;

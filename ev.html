@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getspares - EV</title>
+    <link rel="stylesheet" href="/assets/css/getspares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/getspares.html" class="logo">
+                    <img src="/assets/images/Get-Spares cropped.png" width="150px" alt="get-spares Logo" class="digital market-logo">
+                </a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li class="active"><a href="/getspares.html">Home</a></li>
+                    <li><a href="ev.html">EVs</a></li>
+                    <li><a href="hybrid.html">Hybrid</a></li>
+                    <li class="dropdown">
+                        <a href="#">Internal Combustion <i class="fa fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="petrol.html">Petrol</a></li>
+                            <li><a href="diesel.html">Diesel</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- EV Form -->
+    <section class="ev-section">
+        <div class="form-container">
+        <h1>EV Spare Parts Request</h1>
+        <form id="evPartsForm" action="https://formsubmit.co/info@mecagroup.com.ng" method="POST">
+            <!-- Customer Information -->
+            <fieldset>
+                <legend>Your Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address*</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+            </fieldset>
+
+            <!-- EV Vehicle Information -->
+            <fieldset>
+                <legend>EV Vehicle Details</legend>
+                <div class="form-group">
+                    <label for="make">Make (Brand)*</label>
+                    <input type="text" id="make" name="make" required>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model*</label>
+                    <input type="text" id="model" name="model" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year*</label>
+                    <input type="number" id="year" name="year" min="2000" max="2025" required>
+                </div>
+                <div class="form-group">
+                    <label for="vin">VIN (Vehicle Identification Number)</label>
+                    <input type="text" id="vin" name="vin">
+                </div>
+                <div class="form-group">
+                    <label for="battery">Battery Type / Capacity (e.g., 60kWh, Lithium-ion)</label>
+                    <input type="text" id="battery" name="battery">
+                </div>
+                <div class="form-group">
+                    <label for="charging">Charging System (e.g., CCS, CHAdeMO, Tesla)</label>
+                    <input type="text" id="charging" name="charging">
+                </div>
+                <div class="form-group">
+                    <label for="licensePlate">License Plate Number</label>
+                    <input type="text" id="licensePlate" name="licensePlate">
+                </div>
+            </fieldset>
+
+            <!-- EV Part Information -->
+            <fieldset>
+                <legend>Part Details</legend>
+                <div class="form-group">
+                    <label for="partName">Part Name/Description*</label>
+                    <input type="text" id="partName" name="partName" required>
+                </div>
+                <div class="form-group">
+                    <label for="partNumber">OEM Part Number (if known)</label>
+                    <input type="text" id="partNumber" name="partNumber">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity*</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="urgency">Urgency</label>
+                    <select id="urgency" name="urgency">
+                        <option value="standard">Standard (1-2 weeks)</option>
+                        <option value="urgent">Urgent (3-5 business days)</option>
+                        <option value="express">Express (1-2 business days)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information (e.g., part location, symptoms, etc.)</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Terms and Submission -->
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I understand this is a request and final price/availability will be confirmed*</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </div>
+
+            <!-- Hidden Inputs -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
+        <div id="confirmation" class="hidden">
+            <h2>Thank you for your request!</h2>
+            <p>We've received your EV spare parts request and will contact you shortly with availability and pricing information.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Old Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About GetSpares</h3>
+                    <p>GetSpares is a supplier of high-quality auto components for all vehicle types, from traditional combustion engines to the latest electric vehicles.</p>
+                    <!-- <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div> -->
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">EV Parts</a></li>
+                        <li><a href="#">Hybrid Parts</a></li>
+                        <li><a href="#">Combustion Parts</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Parts Identification</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Quality Assurance</a></li>
+                        <li><a href="#">Logistics</a></li>
+                    </ul>
+                </div> -->
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fa fa-map-marker"></i> Plot 2542, Hassan Usman Katsina Street, Asokoro, FCT-Abuja, Nigeria.</p>
+                    <p><i class="fa fa-phone"></i> +234 (0) 908 222 2333</p>
+                    <p><i class="fa fa-envelope"></i> info@getspares.com</p>
+                    <!-- <p><i class="fa fa-clock-o"></i> Mon-Fri: 8AM - 6PM</p> -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="year"></span> GetSpares. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        const year = new Date().getFullYear()
+        document.querySelector(".year").innerHTML = year
+
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fa fa-times"></i>' 
+                : '<i class="fa fa-bars"></i>';
+        });
+        
+        // Dropdown Menu for Internal Combustion
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('a');
+            
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const content = dropdown.querySelector('.dropdown-content');
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
